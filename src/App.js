@@ -3,7 +3,7 @@ import "./App.css";
 import MovieCard from './MovieCard';
 
 // API key and URL
-const API_URL = 'http://www.omdbapi.com?apikey=8ab9de86';
+const API_URL = `http://www.omdbapi.com?apikey=${process.env.REACT_APP_OMDB_API_KEY}`;
 
 const App = () => {
     const [movies, setMovies] = useState([]);
